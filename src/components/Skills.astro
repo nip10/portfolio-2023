@@ -1,0 +1,27 @@
+---
+import { certification } from "@data";
+---
+
+<section
+  class="flex items-start justify-between flex-col sm:flex-row dark:text-gray-100"
+  id="certification"
+>
+  <h2 class="w-[15rem] mt-16 font-montserrat">Skills</h2>
+  <div class="w-full">
+    {
+      certification.map((item) => (
+        <div class="my-16">
+          <h3 class="text-xl font-semibold font-montserrat">{item.name}</h3>
+          <p class="text-sm mt-3 text-blue-500">{item.provider}</p>
+          {item.description && (
+            <ul class="list-disc">
+              {item.description.map((item) => (
+                <li class="dark:text-gray-100" set:html={item} />
+              ))}
+            </ul>
+          )}
+        </div>
+      ))
+    }
+  </div>
+</section>

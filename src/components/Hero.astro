@@ -1,0 +1,20 @@
+---
+import type { PersonalInfo } from "../data";
+
+const { name, about } = Astro.props as PersonalInfo;
+---
+
+<section>
+  <p class="dark:text-gray-100">Hey 👋, I'm</p>
+  <h1
+    class="font-montserrat font-extrabold text-transparent text-8xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 my-6 h-[120px]"
+  >
+    {name}
+  </h1>
+  <p class="dark:text-gray-100 text-lg mb-16">
+    {about}
+  </p>
+  <p>
+    <div set:html={'<a href="#">foo</a>'} />
+  </p>
+</section>

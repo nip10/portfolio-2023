@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  body {
+    @apply bg-gray-100 dark:bg-gray-900;
+  }
+  .container {
+    @apply max-w-[1112px] mx-auto px-4;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-montserrat;
+  }
+  h1 {
+    @apply text-6xl sm:text-8xl leading-5;
+  }
+  h2 {
+    @apply text-xl font-semibold;
+  }
+  p,
+  li,
+  a {
+    @apply font-lora text-gray-800;
+  }
+  .footer-icons {
+    @apply dark:text-gray-100 flex items-center border border-gray-800 dark:border-gray-100 p-4 rounded-lg justify-center;
+  }
+}

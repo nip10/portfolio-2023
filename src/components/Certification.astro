@@ -1,22 +1,37 @@
 ---
-import { certification } from "@data";
+import type { Certification } from "../data";
+
+export interface Props {
+  data: Certification[];
+}
+
+const { data } = Astro.props;
 ---
 
 <section
-  class="flex items-start justify-between flex-col sm:flex-row dark:text-gray-100"
+  class="flex items-start justify-between flex-col sm:flex-row dark:text-gray-100 mt-16"
   id="certification"
 >
-  <h2 class="w-[15rem] mt-16 font-montserrat">Certifications</h2>
-  <div class="w-full">
+  <h2
+    class="w-[15rem] font-montserrat text-slate-900 dark:text-slate-200 underline underline-offset-4 mb-4 md:mb-0"
+  >
+    Certifications
+  </h2>
+  <div class="w-full flex gap-10 flex-col">
     {
-      certification.map((item) => (
-        <div class="my-16">
+      data.map((item) => (
+        <div>
           <h3 class="text-xl font-semibold font-montserrat">{item.name}</h3>
-          <p class="text-sm mt-2 text-blue-500">{item.provider}</p>
+          <p class="text-sm mt-1 text-slate-500 dark:text-slate-400">
+            {item.provider}
+          </p>
           {item.description && (
-            <ul class="list-disc">
+            <ul class="list-disc list-inside">
               {item.description.map((item) => (
-                <li class="dark:text-gray-100" set:html={item} />
+                <li
+                  class="text-slate-500 dark:text-slate-400"
+                  set:html={item}
+                />
               ))}
             </ul>
           )}

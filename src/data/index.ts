@@ -1,41 +1,9 @@
 export interface PersonalInfo {
   name: string;
-  about: string;
-  resume: string;
 }
 
 export const personalInfo: PersonalInfo = {
   name: "Diogo Cardoso",
-  about: `I'm a software engineer based in Karachi, Pakistan.
-  I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.
-  I have been working for 3 year, with a demonstrated history of working in the Computer Software industry. Skilled in Front-end Development.
-  I have 3 years of experience in HTML, CSS, SCSS, JavaScript, Bootstrap, tailwind CSS, StyledComponent, React JS and Next JS. Hence,
-  I have successfully completed several web projects from scratch.
-  Yet, I learn continuously and never stop exploring new technologies.
-  So, I have also gained knowledge of Node JS, Express JS, Mongo DB, Python,
-  firebase and React Native with time.
-
-  I'm an experienced Front End Developer with a passion for great user experience.
-  I'm skilled in Angular, RxJS, Redux, TypeScript, Test Driven Development, and Accessibility.
-  I'm currently working as an Angular Developer at RBC, and have previously done agency work for Strategic Content Labs and Agency Undone.
-
-  I build things for the web.
-
-  I'm a Software Engineer who enjoys creating and developing dynamic web applications with the latest
-  technologies. Background in Electrical and Computer Engineering.
-
-  I work at a startup where I wear a lot of hats.
-  Organized, team-oriented and highly adaptable, enjoy fast-paced environments.
-
-  Tennis. Padel. Soccer (go FCPorto!). Travel. Food. Books. Movies. Music. Tech. Finance. Economics. Psychology.
-
-  Currently reading: (see Goodreads) https://www.goodreads.com/user/show/146957216-diogo-cardoso
-  Currently watching: (see Trakt) https://trakt.tv/users/nip10
-  <a href="https://www.google.com">foo</a>
-
-  Available for freelance work. If you have a project that you want to get started, think you need my help with something or just fancy saying hey, then get in touch.
-  `,
-  resume: "",
 };
 
 export interface Work {
@@ -62,8 +30,8 @@ export const work: Work[] = [
     summary:
       "SWE doing full-stack in a high growth startup. Focus on delivering new features and improving the product on the front-end side.",
     description: [
-      "Developed and maintained back-end services using NodeJS, PostgreSQL and Serverless",
       "Developed screens and UI components for the web application using React, Redux and Styled Components",
+      "Developed and maintained back-end services using NodeJS, PostgreSQL and Serverless",
       "Worked closely with the design team (UI/UX) in developing a design system and components library using Storybook",
       "Worked closely with the product team in defining the product roadmap and features",
       "Implemented unit and e2e tests using React Testing Library and Cypress",
@@ -296,20 +264,20 @@ export const skills: SkillGroup[] = [
 export interface Project {
   name: string;
   description: string[];
-  url: string;
+  liveUrl: string;
   repoUrl: string | false;
   techStackAndTools: string[];
-  thumbnail: string;
+  thumbnail?: string;
 }
 
 export const projects: Project[] = [
   {
     name: "Portfolio",
     description: [
-      "This portfolio website. Built using a new web framework called Astro, and Tailwind.",
+      "This portfolio website. Built using Astro and Tailwind.",
       'Inpired by the work of <a class="text-sm dark:text-gray-100" href="https://github.com/uzzii-21/astro-portfolio" target="_blank">@uzzii-21</a>',
     ],
-    url: "https://diogocardoso.dev",
+    liveUrl: "https://diogocardoso.dev",
     repoUrl: "https://github.com/nip10/portfolio-2023",
     techStackAndTools: [
       "Astro",
@@ -319,7 +287,7 @@ export const projects: Project[] = [
       "Github Actions",
       "Git",
     ],
-    thumbnail: "",
+    thumbnail: undefined,
   },
   {
     name: "Fu** you Money",
@@ -327,7 +295,7 @@ export const projects: Project[] = [
       "An online calculator that helps you calculate how much money you need to save to reach financial independence.",
       "Funny domain name, but it's a serious tool. Inspired by John Goodman's speech in the movie The Gambler.",
     ],
-    url: "https://fuckyou.money",
+    liveUrl: "https://fuckyou.money",
     repoUrl: false,
     techStackAndTools: [
       "NextJS",
@@ -336,7 +304,7 @@ export const projects: Project[] = [
       "Github Actions",
       "Git",
     ],
-    thumbnail: "",
+    thumbnail: undefined,
   },
   {
     name: "Wondermoney",
@@ -346,7 +314,7 @@ export const projects: Project[] = [
       "Using the open banking standards, it also allows you to connect your bank account and automatically import your transactions.",
       "It also integrates with the major Brokers in Europe, allowing you to automatically import your stock portfolio.",
     ],
-    url: "https://app.wonder.money",
+    liveUrl: "https://app.wonder.money",
     repoUrl: false,
     techStackAndTools: [
       "NextJS",
@@ -358,14 +326,14 @@ export const projects: Project[] = [
       "Github Actions",
       "Git",
     ],
-    thumbnail: "",
+    thumbnail: undefined,
   },
   {
     name: "Euromillions Notifier",
     description: [
       "A web application that notifies you when the Euromillions jackpot reaches a certain amount.",
     ],
-    url: "https://euronotify.diogocardoso.dev/",
+    liveUrl: "https://euronotify.diogocardoso.dev/",
     repoUrl: "https://github.com/nip10/euromillions-notifications",
     techStackAndTools: [
       "React",
@@ -375,7 +343,7 @@ export const projects: Project[] = [
       "Github Actions",
       "Git",
     ],
-    thumbnail: "",
+    thumbnail: undefined,
   },
 ];
 

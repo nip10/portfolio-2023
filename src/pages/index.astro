@@ -16,8 +16,8 @@ import Skills from "@components/Skills.astro";
 import Projects from "@components/Projects.astro";
 ---
 
-<Layout title={personalInfo.name}>
-  <Hero name={personalInfo.name} about={personalInfo.about} />
+<Layout title={personalInfo.name} gaId="123">
+  <Hero name={personalInfo.name} />
   <Work data={work} />
   <Education data={education} />
   <Certification data={certification} />

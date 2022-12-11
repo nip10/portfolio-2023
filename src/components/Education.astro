@@ -1,29 +1,35 @@
 ---
-import { education } from "@data";
+import type { Education } from "../data";
+
+export interface Props {
+  data: Education[];
+}
+
+const { data } = Astro.props;
 ---
 
 <section
-  class="flex items-start justify-between flex-col sm:flex-row dark:text-gray-100"
+  class="flex items-start justify-between flex-col sm:flex-row dark:text-gray-100 mt-16"
   id="education"
 >
-  <h2 class="w-[15rem] mt-16 font-montserrat">Education</h2>
+<h2
+class="w-[15rem] font-montserrat text-slate-900 dark:text-slate-200 underline underline-offset-4 mb-4 md:mb-0"
+>Education</h2>
   <div class="w-full">
     {
-      education.map((item) => (
-        <div class="my-16">
+      data.map((item) => (
           <div class="flex justify-between items-center flex-wrap">
             <h3 class="text-xl font-semibold font-montserrat">{item.name}</h3>
             <p class="text-sm dark:text-gray-100">
               {item.startDate} - {item.endDate}
             </p>
           </div>
-          <p class="text-sm mt-2 text-blue-500">{item.location}</p>
-          <ul class="list-disc mt-4">
+          <p class="text-sm mt-1 text-slate-500 dark:text-slate-400">{item.location}</p>
+          <ul class="list-disc mt-4 list-inside">
             {item.description.map((item) => (
-              <li class="dark:text-gray-100" set:html={item} />
+              <li class="text-slate-500 dark:text-slate-400" set:html={item} />
             ))}
           </ul>
-        </div>
       ))
     }
   </div>

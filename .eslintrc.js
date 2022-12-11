@@ -4,7 +4,9 @@ module.exports = {
     // ...
     "plugin:astro/recommended",
     "plugin:astro/jsx-a11y-recommended",
+    "plugin:tailwindcss/recommended",
   ],
+  plugins: ["tailwindcss"],
   // ...
   overrides: [
     {

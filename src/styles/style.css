@@ -32,7 +32,4 @@ html {
   a {
     @apply font-lora text-gray-800;
   }
-  .footer-icons {
-    @apply dark:text-gray-100 flex items-center border border-gray-800 dark:border-gray-100 p-4 rounded-lg justify-center;
-  }
 }

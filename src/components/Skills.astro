@@ -1,25 +1,35 @@
 ---
-import { certification } from "@data";
+import type { SkillGroup } from "../data";
+
+export interface Props {
+  data: SkillGroup[];
+}
+
+const { data } = Astro.props;
 ---
 
 <section
-  class="flex items-start justify-between flex-col sm:flex-row dark:text-gray-100"
+  class="flex items-start justify-between flex-col sm:flex-row dark:text-gray-100 mt-16"
   id="certification"
 >
-  <h2 class="w-[15rem] mt-16 font-montserrat">Skills</h2>
+  <h2
+    class="w-[15rem] font-montserrat text-slate-900 dark:text-slate-200 underline underline-offset-4"
+  >
+    Skills
+  </h2>
   <div class="w-full">
     {
-      certification.map((item) => (
+      data.map((skillGroup) => (
         <div class="my-16">
-          <h3 class="text-xl font-semibold font-montserrat">{item.name}</h3>
-          <p class="text-sm mt-3 text-blue-500">{item.provider}</p>
-          {item.description && (
-            <ul class="list-disc">
-              {item.description.map((item) => (
-                <li class="dark:text-gray-100" set:html={item} />
-              ))}
-            </ul>
-          )}
+          <h3 class="text-xl font-semibold font-montserrat">
+            {skillGroup.category}
+          </h3>
+          {skillGroup.skills.map((skill) => (
+            <div class="flex items-center mt-4">
+              <div class="w-4 h-4 mr-2 rounded-full bg-gray-300 dark:bg-gray-600" />
+              <p class="text-sm">{skill}</p>
+            </div>
+          ))}
         </div>
       ))
     }

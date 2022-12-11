@@ -1,27 +1,24 @@
 ---
-import { projects } from "@data";
+import type { Project } from "../data";
+import ProjectCard from "./ProjectCard.astro";
+
+export interface Props {
+  data: Project[];
+}
+
+const { data } = Astro.props;
 ---
 
 <section
-  class="flex items-start justify-between flex-col sm:flex-row dark:text-gray-100"
+  class="flex items-start justify-between flex-col sm:flex-row dark:text-gray-100 mt-16"
   id="projects"
 >
-  <h2 class="w-[15rem] mt-16 font-montserrat">Projects</h2>
-  <div class="w-full">
-    {
-      projects.map((item) => (
-        <div class="my-16">
-          <h3 class="text-xl font-semibold font-montserrat">{item.name}</h3>
-          <p class="text-sm mt-3 text-blue-500">{item.url}</p>
-          {item.description && (
-            <ul class="list-disc">
-              {item.description.map((item) => (
-                <li class="dark:text-gray-100" set:html={item} />
-              ))}
-            </ul>
-          )}
-        </div>
-      ))
-    }
+  <h2
+    class="w-[15rem] font-montserrat text-slate-900 dark:text-slate-200 underline underline-offset-4 mb-4 md:mb-0"
+  >
+    Projects
+  </h2>
+  <div class="w-full grid gap-4 grid-cols-1 grid-rows-auto md:grid-cols-2">
+    {data.map((item) => <ProjectCard project={item} />)}
   </div>
 </section>

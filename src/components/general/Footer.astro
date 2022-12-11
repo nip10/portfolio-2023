@@ -1,4 +1,5 @@
 ---
+import { Icon } from "astro-icon";
 import type { PersonalInfo, SocialProfile } from "@data";
 
 const { name, socialMediaProfiles } = Astro.props as {
@@ -8,23 +9,32 @@ const { name, socialMediaProfiles } = Astro.props as {
 ---
 
 <footer
-  class="container flex sm:flex-row flex-col justify-between items-center mb-8 sm:mb-4"
+  class="container flex flex-col md:flex-row justify-between items-center mb-8 sm:mb-4"
 >
-  <p class="dark:text-gray-100 text-right my-8 font-montserrat">
-    Developed by <strong>{name}</strong>
+  <p
+    class="dark:text-gray-100 text-right my-8 font-montserrat inline-flex items-center order-last md:order-first"
+  >
+    Made with <Icon name="love" /> by &nbsp;<strong>{name}</strong>
   </p>
-  <div class="grid grid-cols-5 gap-4">
+  <div class="grid grid-cols-4 gap-4">
     {
       socialMediaProfiles.map((socialMediaProfile) => (
         <a
           aria-label="Social Media"
           href={socialMediaProfile.url}
           target="_blank"
-          class="footer-icons"
+          class="dark:text-gray-100 flex items-center border border-gray-800 dark:border-gray-100 p-4 rounded-lg justify-center"
         >
-          {socialMediaProfile.iconSvg}
+          <Icon name={socialMediaProfile.name.toLowerCase()} />
         </a>
       ))
     }
   </div>
 </footer>
+
+<style lang="css">
+  [astro-icon] {
+    width: 1.5rem;
+    height: auto;
+  }
+</style>

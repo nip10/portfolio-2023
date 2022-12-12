@@ -17,7 +17,9 @@ const { educations } = Astro.props;
   >
     Education
   </h2>
-  <div class="w-full flex gap-10 flex-col pl-8 border-l border-slate-700">
+  <div
+    class="w-full flex gap-10 flex-col md:pl-8 md:border-l md:border-slate-700"
+  >
     {
       educations.map((education) => (
         <div>

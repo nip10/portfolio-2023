@@ -64,16 +64,16 @@ export const work: Work[] = [
     about:
       "Hostelworld is the world's leading hostel booking platform, with over 35,000 properties in 180 countries.",
     summary:
-      'Worked on the <a class="text-sm dark:text-indigo-300" href="https://design.hostelworld.com/6d86fdcac/p/688c6f-wanderlust-design-system" target="_blank" rel="noopener">Wanderlust Design System</a>, a design system built with Stencil used by multiple Hostelworld applications.',
+      'Worked on the <a class="dark:text-indigo-300" href="https://design.hostelworld.com/6d86fdcac/p/688c6f-wanderlust-design-system" target="_blank" rel="noopener">Wanderlust Design System</a>, a design system built with web-components (Stencil) used by multiple Hostelworld applications.',
     description: [
       "Developed and maintained components for the design system using StencilJS and SASS",
       "Developed screens and UI components for core web application using Vue and SASS",
     ],
     techStackAndTools: [
-      "Vue",
       "StencilJS",
       "SASS",
       "Storybook",
+      "Vue",
       "BitBucket",
       "Git",
     ],

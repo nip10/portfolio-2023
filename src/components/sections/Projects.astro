@@ -1,6 +1,6 @@
 ---
 import type { Project, SocialProfile } from "../../data";
-import Card from "../ProjectCard.astro";
+import ProjectCard from "../ProjectCard.astro";
 
 export interface Props {
   projects: Project[];
@@ -20,7 +20,7 @@ const { projects, githubUrl } = Astro.props;
     Projects
   </h2>
   <div class="w-full grid gap-4 grid-cols-1 grid-rows-auto md:grid-cols-2">
-    {projects.map((project) => <Card project={project} />)}
+    {projects.map((project) => <ProjectCard project={project} />)}
     <a
       class="text-indigo-300 text-sm"
       href={githubUrl}

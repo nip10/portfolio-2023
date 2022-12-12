@@ -1,5 +1,5 @@
 ---
-import type { PersonalInfo } from "../data";
+import type { PersonalInfo } from "../../data";
 
 export interface Props {
   name: PersonalInfo["name"];
@@ -16,7 +16,7 @@ const { name } = Astro.props;
   >
   </div>
   <h1
-    class="font-montserrat font-extrabold text-transparent text-6xl md:text-8xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 my-6 h-auto md:h-[120px] break-words md:break-normal"
+    class="font-montserrat font-extrabold text-transparent text-6xl md:text-8xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 my-6 h-auto md:h-[120px] break-words md:break-normal fadeInBottom"
   >
     {name}
   </h1>

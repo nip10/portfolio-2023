@@ -35,4 +35,18 @@ html {
   [astro-icon] {
     height: auto;
   }
+  @keyframes fadeInBottom {
+    from {
+      opacity: 0;
+      transform: translateY(60%);
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .fadeInBottom {
+    animation-name: fadeInBottom;
+    animation-duration: 500ms;
+    animation-fill-mode: both;
+  }
 }

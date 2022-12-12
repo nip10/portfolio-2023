@@ -9,12 +9,12 @@ import {
   socialMediaProfiles,
 } from "@data";
 import Layout from "../layouts/Layout.astro";
-import Hero from "@components/Hero.astro";
-import Work from "@components/Work.astro";
-import Education from "@components/Education.astro";
-import Certification from "@components/Certification.astro";
-import Skills from "@components/Skills.astro";
-import Projects from "@components/Projects.astro";
+import Hero from "@components/sections/Hero.astro";
+import Work from "@components/sections/Work.astro";
+import Education from "@components/sections/Education.astro";
+import Certification from "@components/sections/Certification.astro";
+import Skills from "@components/sections/Skills.astro";
+import Projects from "@components/sections/Projects.astro";
 
 const githubUrl = socialMediaProfiles.find(
   (profile) => profile.name === "GitHub"

@@ -1,6 +1,6 @@
 ---
-import type { Work } from "../data";
-import Badge from "./ui/Badge.astro";
+import type { Work } from "../../data";
+import Badge from "./../ui/Badge.astro";
 
 export interface Props {
   works: Work[];
@@ -18,7 +18,7 @@ const { works } = Astro.props;
   >
     Work
   </h2>
-  <div class="w-full flex gap-10 flex-col">
+  <div class="w-full flex gap-10 flex-col pl-8 border-l border-slate-700">
     {
       works.map((work) => (
         <div>

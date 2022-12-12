@@ -8,27 +8,37 @@ const { name, socialMediaProfiles } = Astro.props as {
 };
 ---
 
-<footer
-  class="container flex flex-col md:flex-row justify-between items-center my-16 sm:my-4"
->
-  <p
-    class="dark:text-gray-100 text-right my-8 font-montserrat inline-flex items-center order-last md:order-first"
-  >
-    Made with <Icon name="love" /> by &nbsp;<strong>{name}</strong>
-  </p>
-  <div class="grid grid-cols-4 gap-4">
-    {
-      socialMediaProfiles.map((socialMediaProfile) => (
-        <a
-          aria-label="Social Media"
-          href={socialMediaProfile.url}
-          target="_blank"
-          class="dark:text-gray-100 flex items-center border border-gray-800 dark:border-gray-100 p-4 rounded-lg justify-center"
-        >
-          <Icon name={socialMediaProfile.name.toLowerCase()} />
-        </a>
-      ))
-    }
+<footer class="mt-16 sm:mt-4 relative h-[250px]">
+  <div>
+    <div class="absolute w-full h-full overflow-hidden -z-10">
+      <div
+        class="h-full w-full top-0 left-0 origin-bottom-right -skew-y-6 bg-slate-800 overflow-hidden opacity-90"
+      >
+      </div>
+    </div>
+    <div
+      class="flex flex-col md:flex-row justify-between items-center container pt-[9rem]"
+    >
+      <p
+        class="text-slate-200 text-right my-8 font-montserrat inline-flex items-center order-last md:order-first"
+      >
+        Made with <Icon name="love" /> by &nbsp;<strong>{name}</strong>
+      </p>
+      <div class="grid grid-cols-4 gap-4">
+        {
+          socialMediaProfiles.map((socialMediaProfile) => (
+            <a
+              aria-label="Social Media"
+              href={socialMediaProfile.url}
+              target="_blank"
+              class="text-slate-200 flex items-center p-4 rounded-lg justify-center hover:bg-slate-700 transition duration-150 ease-in-out"
+            >
+              <Icon name={socialMediaProfile.name.toLowerCase()} />
+            </a>
+          ))
+        }
+      </div>
+    </div>
   </div>
 </footer>
 
@@ -36,4 +46,5 @@ const { name, socialMediaProfiles } = Astro.props as {
   [astro-icon] {
     width: 1.5rem;
   }
+  /* scroll-margin-top */
 </style>

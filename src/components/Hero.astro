@@ -9,44 +9,59 @@ const { name } = Astro.props;
 ---
 
 <section class="mt-8 md:mt-16 mb-16 md:mb-32">
-  <p class="dark:text-gray-100">Hey 👋, I'm</p>
+  <p class="text-gray-800 dark:text-gray-100">Hey 👋, I'm</p>
+  <div
+    aria-hidden="true"
+    class="circle-radial-gradient w-[350px] h-[350px] absolute top-[50px] left-[50px] scale-150 dark:opacity-10 opacity-20 -z-10"
+  >
+  </div>
   <h1
     class="font-montserrat font-extrabold text-transparent text-6xl md:text-8xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 my-6 h-auto md:h-[120px] break-words md:break-normal"
   >
     {name}
   </h1>
-  <p class="dark:text-gray-100 text-lg">I build things for the web.</p>
-  <p class="dark:text-gray-100 text-lg">
+  <p class="text-gray-800 dark:text-gray-100 text-lg">
+    I build things for the web.
+  </p>
+  <p class="text-gray-800 dark:text-gray-100 text-lg">
     Background in Electrical and Computer Engineering.
   </p>
-  <p class="dark:text-gray-100 text-lg">
+  <p class="text-gray-800 dark:text-gray-100 text-lg">
     Organized, team-oriented and highly adaptable, enjoy fast-paced
     environments.
   </p>
-  <p class="dark:text-gray-100 text-lg">
-    Generalist with a focus on Front-End Development, but always learning new
-    things.
-  </p>
   <br />
-  <p class="dark:text-gray-100 text-lg">
+  <p class="text-gray-800 dark:text-gray-100 text-lg">
     Tennis. Padel. Soccer (go FCPorto!). Travel. Food. <a
-      class="dark:text-indigo-300 text-lg"
+      class="text-indigo-300 text-lg"
       href="https://trakt.tv/users/nip10"
       target="_blank"
       rel="noopener">Movies. Tv shows.</a
     > Music. <a
-      class="dark:text-indigo-300 text-lg"
+      class="text-indigo-300 text-lg"
       href="https://www.goodreads.com/user/show/146957216-diogo-cardoso"
       target="_blank"
       rel="noopener">Books.</a
     > Tech. Finance. Economics. Psychology.
   </p>
   <br />
-  <p class="dark:text-gray-100 text-lg">
+  <p class="text-gray-800 dark:text-gray-100 text-lg">
     Available for freelance work. If you have a project that you want to get
     started, think you need my help with something or just fancy saying hey,
-    then <a class="dark:text-indigo-300 text-lg" href="#contact"
-      >get in touch.</a
-    >.
+    then <a class="text-indigo-300 text-lg" href="#contact">get in touch.</a>.
   </p>
 </section>
+
+<style lang="css">
+  .circle-radial-gradient {
+    /* width: 350px; */
+    /* height: 350px; */
+    background: radial-gradient(circle, #a855f7 0, rgba(161, 252, 70, 0) 71%);
+    /* position: absolute; */
+    /* top: 50px; */
+    /* left: 50px; */
+    /* transform: scale(1.6); */
+    /* opacity: 0.1; */
+    /* z-index: -1; */
+  }
+</style>

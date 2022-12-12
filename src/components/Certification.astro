@@ -2,10 +2,10 @@
 import type { Certification } from "../data";
 
 export interface Props {
-  data: Certification[];
+  certifications: Certification[];
 }
 
-const { data } = Astro.props;
+const { certifications } = Astro.props;
 ---
 
 <section
@@ -19,15 +19,17 @@ const { data } = Astro.props;
   </h2>
   <div class="w-full flex gap-10 flex-col">
     {
-      data.map((item) => (
+      certifications.map((certification) => (
         <div>
-          <h3 class="text-xl font-semibold font-montserrat">{item.name}</h3>
+          <h3 class="text-xl font-semibold font-montserrat">
+            {certification.name}
+          </h3>
           <p class="text-sm mt-1 text-slate-500 dark:text-slate-400">
-            {item.provider}
+            {certification.provider}
           </p>
-          {item.description && (
+          {certification.description && (
             <ul class="list-disc list-inside">
-              {item.description.map((item) => (
+              {certification.description.map((item) => (
                 <li
                   class="text-slate-500 dark:text-slate-400"
                   set:html={item}

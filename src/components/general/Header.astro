@@ -35,7 +35,7 @@
         <button
           aria-label="theme-button"
           id="theme-button"
-          class="dark:text-gray-100 rounded-lg p-4 ml-2 bg-slate-100 dark:bg-[#202020]"
+          class="dark:text-gray-100 rounded-lg p-4 ml-2 bg-slate-200 dark:bg-slate-800"
         >
           <svg
             id="moon-svg"
@@ -105,7 +105,6 @@
 
   // Theme button icon setter
   const setThemeIcon = (newTheme: Theme): void => {
-    console.log("setThemeIcon newTheme", newTheme);
     if (moonSvg && sunSvg) {
       if (newTheme === "dark") {
         moonSvg.classList.add("hidden");
@@ -119,7 +118,6 @@
 
   // Theme setter
   const setTheme = (newTheme: Theme): void => {
-    console.log("setTheme newTheme", newTheme);
     document.documentElement.setAttribute("data-theme", newTheme);
     window.localStorage.setItem(LS_THEME_KEY, newTheme);
     setThemeIcon(newTheme);
@@ -134,10 +132,10 @@
         return lsTheme;
       }
     }
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      return "dark";
+    if (window.matchMedia("(prefers-color-scheme: light)").matches) {
+      return "light";
     }
-    return "light";
+    return "dark";
   })();
   // Set initial theme
   setTheme(theme);

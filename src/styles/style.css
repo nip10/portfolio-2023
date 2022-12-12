@@ -32,4 +32,7 @@ html {
   a {
     @apply font-lora text-gray-800;
   }
+  [astro-icon] {
+    height: auto;
+  }
 }

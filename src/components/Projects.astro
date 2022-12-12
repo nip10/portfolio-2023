@@ -1,12 +1,13 @@
 ---
-import type { Project } from "../data";
-import ProjectCard from "./ProjectCard.astro";
+import type { Project, SocialProfile } from "../data";
+import Card from "./Card.astro";
 
 export interface Props {
-  data: Project[];
+  projects: Project[];
+  githubUrl?: SocialProfile["url"];
 }
 
-const { data } = Astro.props;
+const { projects, githubUrl } = Astro.props;
 ---
 
 <section
@@ -19,6 +20,12 @@ const { data } = Astro.props;
     Projects
   </h2>
   <div class="w-full grid gap-4 grid-cols-1 grid-rows-auto md:grid-cols-2">
-    {data.map((item) => <ProjectCard project={item} />)}
+    {projects.map((project) => <Card project={project} />)}
+    <a
+      class="text-indigo-300 text-sm"
+      href={githubUrl}
+      target="_blank"
+      rel="noopener">More projects on my GitHub.</a
+    >
   </div>
 </section>

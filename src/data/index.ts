@@ -275,7 +275,7 @@ export const projects: Project[] = [
     name: "Portfolio",
     description: [
       "This portfolio website. Built using Astro and Tailwind.",
-      'Inpired by the work of <a class="text-sm dark:text-gray-100" href="https://github.com/uzzii-21/astro-portfolio" target="_blank">@uzzii-21</a>',
+      'Inpired by the work of <a class="dark:text-indigo-300" href="https://github.com/uzzii-21/astro-portfolio" target="_blank">@uzzii-21</a>',
     ],
     liveUrl: "https://diogocardoso.dev",
     repoUrl: "https://github.com/nip10/portfolio-2023",
@@ -293,7 +293,7 @@ export const projects: Project[] = [
     name: "Fu** you Money",
     description: [
       "An online calculator that helps you calculate how much money you need to save to reach financial independence.",
-      "Funny domain name, but it's a serious tool. Inspired by John Goodman's speech in the movie The Gambler.",
+      'Funny domain name, but it\'s a serious tool. Inspired by <a class="dark:text-indigo-300" href="https://www.youtube.com/watch?v=xdfeXqHFmPI" target="_blank" rel="noopener">John Goodman\'s speech in the movie The Gambler.</a>',
     ],
     liveUrl: "https://fuckyou.money",
     repoUrl: false,
@@ -311,8 +311,8 @@ export const projects: Project[] = [
     description: [
       "A web application that helps you manage your money.",
       "It allows you to create budgets, track your expenses and income, and visualize your financial situation.",
-      "Using the open banking standards, it also allows you to connect your bank account and automatically import your transactions.",
-      "It also integrates with the major Brokers in Europe, allowing you to automatically import your stock portfolio.",
+      "Using the open banking standards PSD2, it also allows you to connect your bank account and automatically import your transactions.",
+      "Supports the major brokers in Europe, allowing you to automatically import your financial assets portfolio.",
     ],
     liveUrl: "https://app.wonder.money",
     repoUrl: false,
@@ -371,7 +371,7 @@ export const socialMediaProfiles: SocialProfile[] = [
   },
   {
     name: "Email",
-    url: "hi@diogocardoso.dev",
+    url: "mailto:hi@diogocardoso.dev",
     iconSvg: "instagramSvg",
   },
 ];

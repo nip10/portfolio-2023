@@ -21,11 +21,10 @@ const { name, description, repoUrl, thumbnail, liveUrl, techStackAndTools } =
           aria-label="Social Media"
           target="_blank"
         >
-          <Icon name="github" />
+          <Icon name={"github"} />
         </a>
       )
     }
-
     {
       liveUrl && (
         <a
@@ -53,3 +52,10 @@ const { name, description, repoUrl, thumbnail, liveUrl, techStackAndTools } =
     <h3 class="mr-2 text-xl">{name}</h3>
   </div>
 </article>
+
+<style lang="css">
+  [astro-icon] {
+    width: 1rem;
+    height: auto;
+  }
+</style>

@@ -1,0 +1,35 @@
+---
+---
+
+<div
+  id="progress-bar-container"
+  class="fixed top-0 left-0 h-1 w-0 transition-all duration-200 ease-out z-20 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
+>
+</div>
+
+<script>
+  const progressBar = document.getElementById("progress-bar-container");
+  if (!progressBar) {
+    throw new Error("Progress bar not found");
+  }
+  const body = document.body;
+
+  const scrollProgressBar = () => {
+    const scrollDistance = -body.getBoundingClientRect().top;
+    const progressPercentage =
+      (scrollDistance /
+        (body.getBoundingClientRect().height -
+          document.documentElement.clientHeight)) *
+      100;
+
+    const val = Math.floor(progressPercentage);
+    progressBar.style.width = `${val}%`;
+
+    if (val < 0) {
+      progressBar.style.width = "0%";
+    }
+  };
+
+  window.addEventListener("scroll", scrollProgressBar);
+  window.addEventListener("onload", scrollProgressBar);
+</script>

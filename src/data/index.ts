@@ -273,10 +273,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     name: "Portfolio",
-    description: [
-      "This portfolio website. Built using Astro and Tailwind.",
-      'Inpired by the work of <a class="dark:text-indigo-300" href="https://github.com/uzzii-21/astro-portfolio" target="_blank">@uzzii-21</a>',
-    ],
+    description: ["This portfolio website. Built using Astro and Tailwind."],
     liveUrl: "https://diogocardoso.dev",
     repoUrl: "https://github.com/nip10/portfolio-2023",
     techStackAndTools: [
@@ -287,7 +284,7 @@ export const projects: Project[] = [
       "Github Actions",
       "Git",
     ],
-    thumbnail: undefined,
+    thumbnail: "/portfolio.png",
   },
   {
     name: "Fu** you Money",
@@ -304,7 +301,7 @@ export const projects: Project[] = [
       "Github Actions",
       "Git",
     ],
-    thumbnail: undefined,
+    thumbnail: "/fum.png",
   },
   {
     name: "Wondermoney",
@@ -326,7 +323,7 @@ export const projects: Project[] = [
       "Github Actions",
       "Git",
     ],
-    thumbnail: undefined,
+    thumbnail: "/wm.png",
   },
   {
     name: "Euromillions Notifier",
@@ -339,11 +336,31 @@ export const projects: Project[] = [
       "React",
       "Redux",
       "SCSS",
+      "MongoDB",
+      "NodeJS",
+      "Express",
       "AWS",
       "Github Actions",
       "Git",
     ],
-    thumbnail: undefined,
+    thumbnail: "/euro.gif",
+  },
+  {
+    name: "URL Shortener",
+    description: ["A web application that shortens your urls."],
+    liveUrl: "https://sh.diogocardoso.dev/",
+    repoUrl: "https://github.com/nip10/url-shortener",
+    techStackAndTools: [
+      "React",
+      "CSS",
+      "MongoDB",
+      "NodeJS",
+      "Express",
+      "AWS",
+      "Github Actions",
+      "Git",
+    ],
+    thumbnail: "/sh.gif",
   },
 ];
 

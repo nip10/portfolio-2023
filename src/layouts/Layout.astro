@@ -9,6 +9,7 @@ import Header from "@components/general/Header.astro";
 import { personalInfo, socialMediaProfiles } from "@data";
 
 import "../styles/style.css";
+import ProgressBar from "@components/ui/ProgressBar.astro";
 
 export interface Props {
   gaId: string;
@@ -44,6 +45,7 @@ const { title, gaId } = Astro.props;
     </script>
   </head>
   <body>
+    <ProgressBar />
     <Header />
     <main class="container">
       <slot />

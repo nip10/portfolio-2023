@@ -29,7 +29,7 @@ export const headMeta: HeadMeta = {
         "Diogo Cardoso is a software engineer who specializes in building things for the web",
       type: "website",
       url: "https://diogocardoso.dev",
-      image: "https://diogocardoso.dev/og-image.png",
+      image: "https://diogocardoso.dev/og.png",
     },
     image: {
       alt: "Diogo Cardoso",

@@ -1,4 +1,4 @@
-export interface Meta {
+export interface HeadMeta {
   gaId: string;
   description: string;
   openGraph: {
@@ -8,6 +8,9 @@ export interface Meta {
       url: string;
       image: string;
     };
+    image: {
+      alt: string;
+    };
   };
   twitter: {
     creator: string;
@@ -16,16 +19,20 @@ export interface Meta {
   };
 }
 
-export const meta: Meta = {
+export const headMeta: HeadMeta = {
   gaId: "G-QTHTJJDQFP",
   description:
     "Software engineer who specializes in building things for the web",
   openGraph: {
     basic: {
-      title: "Diogo Cardoso",
+      title:
+        "Diogo Cardoso is a software engineer who specializes in building things for the web",
       type: "website",
       url: "https://diogocardoso.dev",
       image: "https://diogocardoso.dev/og-image.png",
+    },
+    image: {
+      alt: "Diogo Cardoso",
     },
   },
   twitter: {

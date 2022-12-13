@@ -6,17 +6,17 @@ import { SEO } from "astro-seo";
 import Footer from "@components/general/Footer.astro";
 import Header from "@components/general/Header.astro";
 
-import { meta, Meta, personalInfo, socialMediaProfiles } from "@data";
+import { type HeadMeta, personalInfo, socialMediaProfiles } from "@data";
 
 import "../styles/style.css";
 import ProgressBar from "@components/ui/ProgressBar.astro";
 
 export interface Props {
-  meta: Meta;
+  headMeta: HeadMeta;
   title: string;
 }
 
-const { title, gaId } = Astro.props;
+const { title, headMeta } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -31,22 +31,22 @@ const { title, gaId } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <SEO
       title={title}
-      description={meta.description}
-      openGraph={meta.openGraph}
-      twitter={meta.twitter}
+      description={headMeta.description}
+      openGraph={headMeta.openGraph}
+      twitter={headMeta.twitter}
     />
     <script
       is:inline
       async
-      src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
+      src={`https://www.googletagmanager.com/gtag/js?id=${headMeta.gaId}`}
     ></script>
-    <script is:inline define:vars={{ gaId }}>
+    <script is:inline define:vars={{ gaId: headMeta.gaId }}>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         window.dataLayer.push(arguments);
       }
       gtag("js", new Date());
-      gtag("config", gaId);
+      gtag("config", headMeta.gaId);
     </script>
   </head>
   <body>

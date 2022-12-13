@@ -28,14 +28,13 @@ export const work: Work[] = [
     about:
       "The creative intelligence platform fuelling marketing performance - Replai helps mobile companies build successful creative strategies with computer vision AI",
     summary:
-      "SWE doing full-stack in a high growth startup. Focus on delivering new features and improving the product on the front-end side.",
+      "Full-stack role with emphasis on front-end. Focus on delivering new features and improving the product.",
     description: [
       "Developed screens and UI components for the web application using React, Redux and Styled Components",
       "Developed and maintained back-end services using NodeJS, PostgreSQL and Serverless",
       "Worked closely with the design team (UI/UX) in developing a design system and components library using Storybook",
       "Worked closely with the product team in defining the product roadmap and features",
       "Implemented unit and e2e tests using React Testing Library and Cypress",
-      "Interviewed candidates for the team",
     ],
     techStackAndTools: [
       "React",
@@ -87,16 +86,15 @@ export const work: Work[] = [
     about:
       "A remote monitoring solution for beehives with the aim of improving productivity in the honey production and pollination operations",
     summary:
-      "SWE/TL in a pre-seed startup where I did a bit of everything, and more.",
+      "All-rounder in a pre-seed startup, from developing the product to managing the team.",
     description: [
-      "Led team of 2 developers + 1 designer by assisting in planning and prioritizing tasks, supporting and mentoring the team, and ensuring the team is aligned with the product roadmap",
-      "Developed and maintained back-end services using NodeJS, Express and PostgreSQL",
       "Developed screens and UI components for the web application using Angular and SASS",
+      "Developed and maintained back-end services using NodeJS, Express and PostgreSQL",
       "Developed screens and UI components for the mobile application using Ionic/Capacitor, Angular and SASS",
       "Developed desktop application for hardware configuration using Electron, React and Styled Components",
+      "Led team of 3 developers + 1 designer by assisting in planning and prioritizing tasks, supporting and mentoring the team, and ensuring the team is aligned with the product roadmap",
       "Implemented payment and billing system, subscription flow and user management using Stripe and InvoiceExpress",
       "Implemented CI/CD pipelines using GitHub Actions and AWS",
-      "Worked closely with the product team in defining the product roadmap and features",
     ],
     techStackAndTools: [
       "Angular",
@@ -129,7 +127,7 @@ export const work: Work[] = [
     about:
       "Digital Transformation of Home Cleaning and Facility Services that allows on-demand booking",
     summary:
-      "SWE focused on full-stack development. My first experience in a startup/scaleup (seed) environment.",
+      "Full-stack role with emphasis on front-end. My first experience in a startup (seed) environment.",
     description: [
       "Developed and maintained back-end services using ASP.NET and MSSQL",
       "Developed screens and UI components for the web application using Razor and SASS",

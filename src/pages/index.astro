@@ -7,6 +7,7 @@ import {
   skills,
   certification,
   socialMediaProfiles,
+  meta,
 } from "@data";
 import Layout from "../layouts/Layout.astro";
 import Hero from "@components/sections/Hero.astro";
@@ -24,7 +25,7 @@ const email = socialMediaProfiles.find(
 )!.url;
 ---
 
-<Layout title={personalInfo.name} gaId="123">
+<Layout title={personalInfo.name} meta={meta}>
   <Hero name={personalInfo.name} email={email} />
   <Work works={work} />
   <Education educations={education} />

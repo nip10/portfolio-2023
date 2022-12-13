@@ -1,3 +1,40 @@
+export interface Meta {
+  gaId: string;
+  description: string;
+  openGraph: {
+    basic: {
+      title: string;
+      type: string;
+      url: string;
+      image: string;
+    };
+  };
+  twitter: {
+    creator: string;
+    site: string;
+    card: string;
+  };
+}
+
+export const meta: Meta = {
+  gaId: "G-QTHTJJDQFP",
+  description:
+    "Software engineer who specializes in building things for the web",
+  openGraph: {
+    basic: {
+      title: "Diogo Cardoso",
+      type: "website",
+      url: "https://diogocardoso.dev",
+      image: "https://diogocardoso.dev/og-image.png",
+    },
+  },
+  twitter: {
+    creator: "@imnip10",
+    site: "https://diogocardoso.dev",
+    card: "summary_large_image",
+  },
+};
+
 export interface PersonalInfo {
   name: string;
 }

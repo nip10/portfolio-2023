@@ -13,16 +13,14 @@ const { certifications } = Astro.props;
   id="certification"
 >
   <h2
-    class="w-[15rem] font-montserrat text-slate-900 dark:text-slate-200 underline underline-offset-4 mb-4 md:mb-0"
+    class="w-[12rem] font-montserrat text-slate-900 dark:text-slate-200 underline underline-offset-4 mb-4 md:mb-0"
   >
     Certifications
   </h2>
-  <div
-    class="w-full flex gap-10 flex-col md:pl-8 md:border-l md:border-slate-700"
-  >
+  <div class="w-full flex gap-10 flex-col">
     {
       certifications.map((certification) => (
-        <div>
+        <div class="md:pl-8 md:border-l md:border-slate-700">
           <h3 class="text-xl font-semibold font-montserrat">
             {certification.name}
           </h3>

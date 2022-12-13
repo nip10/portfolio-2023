@@ -14,16 +14,14 @@ const { works } = Astro.props;
   id="work"
 >
   <h2
-    class="w-[15rem] font-montserrat text-slate-900 dark:text-slate-200 underline underline-offset-4 mb-4 md:mb-0"
+    class="w-[12rem] font-montserrat text-slate-900 dark:text-slate-200 underline underline-offset-4 mb-4 md:mb-0"
   >
     Work
   </h2>
-  <div
-    class="w-full flex gap-10 flex-col md:pl-8 md:border-l md:border-slate-700"
-  >
+  <div class="w-full flex gap-10 flex-col">
     {
       works.map((work) => (
-        <div>
+        <div class="md:pl-8 md:border-l md:border-slate-700">
           <div class="flex justify-between items-center flex-wrap">
             <h3 class="text-xl font-semibold font-montserrat">
               {work.role} @ {work.name}

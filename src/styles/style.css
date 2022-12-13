@@ -33,7 +33,7 @@ html {
     @apply font-lora text-gray-800;
   }
   section {
-    scroll-margin-top: 2rem;
+    @apply scroll-mt-[1rem] md:scroll-mt-[2rem];
   }
   [astro-icon] {
     height: auto;

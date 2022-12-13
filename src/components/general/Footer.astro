@@ -9,37 +9,38 @@ const { name, socialMediaProfiles } = Astro.props as {
 ---
 
 <footer class="mt-16 sm:mt-4 relative h-[191px] md:h-[250px] xl:h-[350px]">
-  <div>
-    <div class="absolute w-full h-full overflow-hidden -z-10">
-      <div
-        class="h-full w-full top-0 left-0 origin-bottom-right -skew-y-6 bg-slate-800 overflow-hidden opacity-90"
-      >
-      </div>
-    </div>
+  <div class="absolute w-full h-full overflow-hidden -z-10">
     <div
-      class="flex flex-col md:flex-row justify-between items-center container pt-[3rem] md:pt-[9rem] xl:pt-[14rem]"
+      class="h-full w-full top-0 left-0 origin-bottom-right -skew-y-6 bg-slate-800 overflow-hidden opacity-90"
     >
-      <p
-        class="text-slate-200 text-right my-8 font-montserrat inline-flex items-center order-last md:order-first"
-      >
-        Made with <Icon name="love" /> by &nbsp;<strong>{name}</strong>
-      </p>
-      <div class="grid grid-cols-4 gap-4">
-        {
-          socialMediaProfiles.map((socialMediaProfile) => (
-            <a
-              aria-label="Social Media"
-              href={socialMediaProfile.url}
-              target="_blank"
-              class="text-slate-200 flex items-center p-4 rounded-lg justify-center hover:bg-slate-700 transition duration-150 ease-in-out"
-            >
-              <Icon name={socialMediaProfile.name.toLowerCase()} />
-            </a>
-          ))
-        }
-      </div>
     </div>
   </div>
+  <div
+    class="flex flex-col md:flex-row justify-between items-center container pt-[3rem] md:pt-[9rem] xl:pt-[14rem]"
+  >
+    <p
+      class="text-slate-200 text-right my-8 font-montserrat inline-flex items-center order-last md:order-first"
+    >
+      Made with <Icon name="love" /> by &nbsp;<strong>{name}</strong>
+    </p>
+    <div class="grid grid-cols-4 gap-4">
+      {
+        socialMediaProfiles.map((socialMediaProfile) => (
+          <a
+            aria-label="Social Media"
+            href={socialMediaProfile.url}
+            target="_blank"
+            class="text-slate-200 flex items-center p-4 rounded-lg justify-center hover:bg-slate-700 transition duration-150 ease-in-out"
+          >
+            <Icon name={socialMediaProfile.name.toLowerCase()} />
+          </a>
+        ))
+      }
+    </div>
+  </div>
+  <span class="text-slate-600 text-sm block text-center"
+    >Version ##REPLACE_GITHUB_COMMIT_SHA_HERE##</span
+  >
 </footer>
 
 <style lang="css">

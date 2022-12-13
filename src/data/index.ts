@@ -326,7 +326,7 @@ export const projects: Project[] = [
       "Github Actions",
       "Git",
     ],
-    thumbnail: "/portfolio.png",
+    thumbnail: "/portfolio.webp",
   },
   {
     name: "Fu** you Money",
@@ -343,7 +343,7 @@ export const projects: Project[] = [
       "Github Actions",
       "Git",
     ],
-    thumbnail: "/fum.png",
+    thumbnail: "/fum.webp",
   },
   {
     name: "Wondermoney",
@@ -365,7 +365,7 @@ export const projects: Project[] = [
       "Github Actions",
       "Git",
     ],
-    thumbnail: "/wm.png",
+    thumbnail: "/wm.webp",
   },
   {
     name: "Euromillions Notifier",

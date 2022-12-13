@@ -19,8 +19,10 @@ const { projects, githubUrl } = Astro.props;
   >
     Projects
   </h2>
-  <div class="w-full grid gap-4 grid-cols-1 grid-rows-auto md:grid-cols-2">
-    {projects.map((project) => <ProjectCard project={project} />)}
+  <div class="w-full">
+    <div class="grid gap-4 grid-cols-1 grid-rows-auto md:grid-cols-2">
+      {projects.map((project) => <ProjectCard project={project} />)}
+    </div>
     <a
       class="text-indigo-300 text-sm"
       href={githubUrl}

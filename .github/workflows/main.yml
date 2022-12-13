@@ -22,7 +22,7 @@ jobs:
           find: "##REPLACE_GITHUB_COMMIT_SHA_HERE##"
           replace: "${{ github.sha }}"
           regex: false
-          include: "components/general/Footer.astro"
+          include: "src/components/general/Footer.astro"
       - name: Generate build
         run: yarn build
       - name: Deploy to S3

@@ -1,0 +1,37 @@
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    name: Build & Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      # - name: Lint
+      #   run: yarn lint
+      - name: Replace SHA in code
+        uses: jacobtomlinson/gha-find-replace@v2
+        with:
+          find: "##REPLACE_GITHUB_COMMIT_SHA_HERE##"
+          replace: "${{ github.sha }}"
+          regex: false
+          include: "components/general/Footer.astro"
+      - name: Generate build
+        run: yarn build
+      - name: Deploy to S3
+        uses: reggionick/s3-deploy@v3
+        with:
+          folder: dist
+          bucket: ${{ secrets.S3_BUCKET }}
+          bucket-region: ${{ secrets.AWS_DEFAULT_REGION }}
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: "eu-west-2"

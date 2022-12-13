@@ -32,6 +32,9 @@ html {
   a {
     @apply font-lora text-gray-800;
   }
+  section {
+    scroll-margin-top: 2rem;
+  }
   [astro-icon] {
     height: auto;
   }

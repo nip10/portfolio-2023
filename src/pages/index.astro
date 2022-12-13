@@ -18,11 +18,14 @@ import Projects from "@components/sections/Projects.astro";
 
 const githubUrl = socialMediaProfiles.find(
   (profile) => profile.name === "GitHub"
-)?.url;
+)!.url;
+const email = socialMediaProfiles.find(
+  (profile) => profile.name === "Email"
+)!.url;
 ---
 
 <Layout title={personalInfo.name} gaId="123">
-  <Hero name={personalInfo.name} />
+  <Hero name={personalInfo.name} email={email} />
   <Work works={work} />
   <Education educations={education} />
   <Certification certifications={certification} />

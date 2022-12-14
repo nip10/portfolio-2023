@@ -22,7 +22,7 @@
           document.documentElement.clientHeight)) *
       100;
 
-    const val = Math.floor(progressPercentage);
+    const val = Math.ceil(progressPercentage);
     progressBar.style.width = `${val}%`;
 
     if (val < 0) {

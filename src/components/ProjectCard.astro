@@ -24,8 +24,9 @@ const isVideoThumbnail = thumbnail?.endsWith(".webm");
           <a
             href={repoUrl}
             class="text-white p-3 bg-black/50 rounded-full backdrop-blur-md"
-            aria-label="Social Media"
+            aria-label="Repo URL"
             target="_blank"
+            title="Repo URL"
           >
             <Icon name="github" />
           </a>
@@ -36,8 +37,9 @@ const isVideoThumbnail = thumbnail?.endsWith(".webm");
           <a
             href={liveUrl}
             class="text-white p-3 bg-black/50 rounded-full backdrop-blur-md ml-1"
-            aria-label="Social Media"
+            aria-label="Live URL"
             target="_blank"
+            title="Live URL"
           >
             <Icon name="link" />
           </a>
@@ -52,8 +54,8 @@ const isVideoThumbnail = thumbnail?.endsWith(".webm");
           width="640"
           height="360"
           autoplay
+          muted
           loop
-          controls
         />
       ) : (
         <img
@@ -67,10 +69,13 @@ const isVideoThumbnail = thumbnail?.endsWith(".webm");
     }
   </div>
   <div class="p-5">
-    <h3
-      class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-    >
-      {name}
+    <h3 class="mb-2">
+      <a
+        class="font-montserrat text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+        href={liveUrl}
+        target="_blank"
+        rel="noopener">{name}</a
+      >
     </h3>
     {
       description.map((v) => (

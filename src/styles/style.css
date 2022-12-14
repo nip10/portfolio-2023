@@ -11,7 +11,7 @@ html {
     @apply bg-gray-100 dark:bg-gray-900;
   }
   .container {
-    @apply max-w-[1112px] mx-auto px-4;
+    @apply max-w-[1112px] mx-auto px-4 sm:px-8 lg:px-12;
   }
   h1,
   h2,

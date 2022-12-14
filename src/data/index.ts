@@ -10,6 +10,8 @@ export interface HeadMeta {
     };
     image: {
       alt: string;
+      width: number;
+      height: number;
     };
   };
   twitter: {
@@ -33,6 +35,8 @@ export const headMeta: HeadMeta = {
     },
     image: {
       alt: "Diogo Cardoso",
+      width: 792,
+      height: 382,
     },
   },
   twitter: {
@@ -261,6 +265,7 @@ export const skills: SkillGroup[] = [
     category: "Frontend",
     skills: [
       { name: "React" },
+      { name: "NextJS" },
       { name: "Redux" },
       { name: "Styled Components" },
       { name: "SASS" },

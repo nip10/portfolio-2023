@@ -176,7 +176,7 @@ export const work: Work[] = [
       "Full-stack role with emphasis on front-end. My first experience in a startup (seed) environment.",
     description: [
       "Created intuitive and user-friendly screens for the web application, improving user engagement and satisfaction",
-      "Developed and maintained efficient and reliable back-end services, ensuring smooth and reliable performance for users",
+      "Developed and maintained back-end services, ensuring smooth and reliableperformance for users",
       "Built engaging and functional screens and components for the mobile application, improving usability and accessibility on mobile devices",
       "Developed a progressive web application that is optimized for offline use",
       "Implemented a comprehensive payment and billing system, subscription flow, and user management, streamlining these processes and improving the overall user experience",
@@ -388,7 +388,7 @@ export const projects: Project[] = [
       "Github Actions",
       "Git",
     ],
-    thumbnail: "/euro.gif",
+    thumbnail: "/euro.webm",
   },
   {
     name: "URL Shortener",
@@ -405,7 +405,7 @@ export const projects: Project[] = [
       "Github Actions",
       "Git",
     ],
-    thumbnail: "/sh.gif",
+    thumbnail: "/sh.webm",
   },
 ];
 

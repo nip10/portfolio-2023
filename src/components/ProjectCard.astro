@@ -10,6 +10,8 @@ export interface Props {
 const { project } = Astro.props;
 const { name, description, repoUrl, thumbnail, liveUrl, techStackAndTools } =
   project;
+
+const isVideoThumbnail = thumbnail?.endsWith(".webm");
 ---
 
 <article
@@ -42,13 +44,27 @@ const { name, description, repoUrl, thumbnail, liveUrl, techStackAndTools } =
         )
       }
     </div>
-    <img
-      class="rounded-t-lg w-full h-auto"
-      src={thumbnail ?? "/project-thumbnail-placeholder.png"}
-      alt={name}
-      width="640"
-      height="360"
-    />
+    {
+      isVideoThumbnail ? (
+        <video
+          class="rounded-t-lg w-full h-auto"
+          src={thumbnail ?? "/project-thumbnail-placeholder.png"}
+          width="640"
+          height="360"
+          autoplay
+          loop
+          controls
+        />
+      ) : (
+        <img
+          class="rounded-t-lg w-full h-auto"
+          src={thumbnail ?? "/project-thumbnail-placeholder.png"}
+          alt={name}
+          width="640"
+          height="360"
+        />
+      )
+    }
   </div>
   <div class="p-5">
     <h3

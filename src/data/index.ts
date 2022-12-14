@@ -74,11 +74,11 @@ export const work: Work[] = [
     summary:
       "Full-stack role with emphasis on front-end. Focus on delivering new features and improving the product.",
     description: [
-      "Developed screens and UI components for the web application using React, Redux and Styled Components",
-      "Developed and maintained back-end services using NodeJS, PostgreSQL and Serverless",
-      "Worked closely with the design team (UI/UX) in developing a design system and components library using Storybook",
-      "Worked closely with the product team in defining the product roadmap and features",
-      "Implemented unit and e2e tests using React Testing Library and Cypress",
+      "Built intuitive user interfaces and screens for the web application, improving user engagement and satisfaction",
+      "Developed and maintained back-end services, ensuring smooth and reliable performance for users",
+      "Collaborated with the design team to create a cohesive design system and components library, improving usability and consistency across the application",
+      "Worked closely with the product team to define and prioritize product roadmap and features",
+      "Ensured the quality and functionality of the application through the implementation of unit and end-to-end tests",
     ],
     techStackAndTools: [
       "React",
@@ -109,8 +109,9 @@ export const work: Work[] = [
     summary:
       'Worked on the <a class="dark:text-indigo-300" href="https://design.hostelworld.com/6d86fdcac/p/688c6f-wanderlust-design-system" target="_blank" rel="noopener">Wanderlust Design System</a>, a design system built with web-components (Stencil) used by multiple Hostelworld applications.',
     description: [
-      "Developed and maintained components for the design system using StencilJS and SASS",
-      "Developed screens and UI components for core web application using Vue and SASS",
+      "Built and maintained reusable components for the design system using StencilJS and SASS, improving consistency and efficiency",
+      "Created intuitive and user-friendly screens and user interface components for the core web application",
+      "Improved the overall look and feel of the application through the use of modern design techniques and tools",
     ],
     techStackAndTools: [
       "StencilJS",
@@ -132,13 +133,13 @@ export const work: Work[] = [
     summary:
       "All-rounder in a pre-seed startup, from developing the product to managing the team.",
     description: [
-      "Developed screens and UI components for the web application using Angular and SASS",
-      "Developed and maintained back-end services using NodeJS, Express and PostgreSQL",
-      "Developed screens and UI components for the mobile application using Ionic/Capacitor, Angular and SASS",
-      "Developed desktop application for hardware configuration using Electron, React and Styled Components",
-      "Led team of 3 developers + 1 designer by assisting in planning and prioritizing tasks, supporting and mentoring the team, and ensuring the team is aligned with the product roadmap",
-      "Implemented payment and billing system, subscription flow and user management using Stripe and InvoiceExpress",
-      "Implemented CI/CD pipelines using GitHub Actions and AWS",
+      "Built intuitive and user-friendly screens and components for the web application, improving user engagement and satisfaction",
+      "Developed and maintained robust and reliable back-end services, ensuring smooth and reliable performance for users",
+      "Created engaging and functional screens and components for the mobile application, improving usability and accessibility on mobile devices",
+      "Developed desktop application for hardware configuration",
+      "Led and managed a team of 3 developers and 1 designer, ensuring alignment with the product roadmap and user needs",
+      "Implemented a payment and billing system, subscription flow, and user management, streamlining these processes and improving the overall user experience",
+      "Set up and maintained continuous integration and delivery pipelines using GitHub Actions and AWS, resulting in faster and more reliable updates and new features for users",
     ],
     techStackAndTools: [
       "Angular",
@@ -157,6 +158,7 @@ export const work: Work[] = [
       "CI/CD",
       "AWS",
       "Git",
+      "Stripe",
       "Agile",
       "Jira",
       "Figma",
@@ -173,12 +175,12 @@ export const work: Work[] = [
     summary:
       "Full-stack role with emphasis on front-end. My first experience in a startup (seed) environment.",
     description: [
-      "Developed and maintained back-end services using ASP.NET and MSSQL",
-      "Developed screens and UI components for the web application using Razor and SASS",
-      "Developed screens and UI components for the mobile application using Ionic/Capacitor, React and SASS",
-      "Developed offline-first PWA using React, Styled Components and Workbox",
-      "Implemented payment and billing system, subscription flow and user management using Stripe, EuPago, Magnifinance and Primavera",
-      "Implemented CI/CD pipelines using Azure DevOps and Azure cloud",
+      "Created intuitive and user-friendly screens for the web application, improving user engagement and satisfaction",
+      "Developed and maintained efficient and reliable back-end services, ensuring smooth and reliable performance for users",
+      "Built engaging and functional screens and components for the mobile application, improving usability and accessibility on mobile devices",
+      "Developed a progressive web application that is optimized for offline use",
+      "Implemented a comprehensive payment and billing system, subscription flow, and user management, streamlining these processes and improving the overall user experience",
+      "Set up and maintained continuous integration and delivery pipelines, ensuring timely and efficient deployments",
     ],
     techStackAndTools: [
       "ASP.NET",
@@ -189,6 +191,7 @@ export const work: Work[] = [
       "PWA",
       "Ionic",
       "Git",
+      "Stripe",
       "Agile",
       "Azure DevOps",
       "Sketch",

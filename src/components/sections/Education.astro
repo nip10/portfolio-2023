@@ -29,12 +29,12 @@ const { educations } = Astro.props;
               {education.startDate} - {education.endDate}
             </p>
           </div>
-          <p class="text-sm mt-1 text-slate-500 dark:text-slate-400">
+          <p class="text-sm mt-1 text-slate-600 dark:text-slate-400">
             {education.location}
           </p>
           <ul class="list-disc mt-4 list-inside">
             {education.description.map((item) => (
-              <li class="text-slate-500 dark:text-slate-400" set:html={item} />
+              <li class="text-slate-600 dark:text-slate-400" set:html={item} />
             ))}
           </ul>
         </div>

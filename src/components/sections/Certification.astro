@@ -24,14 +24,14 @@ const { certifications } = Astro.props;
           <h3 class="text-xl font-semibold font-montserrat">
             {certification.name}
           </h3>
-          <p class="text-sm mt-1 text-slate-500 dark:text-slate-400">
+          <p class="text-sm mt-1 text-slate-600 dark:text-slate-400">
             {certification.provider}
           </p>
           {certification.description && (
             <ul class="list-disc list-inside">
               {certification.description.map((item) => (
                 <li
-                  class="text-slate-500 dark:text-slate-400"
+                  class="text-slate-600 dark:text-slate-400"
                   set:html={item}
                 />
               ))}

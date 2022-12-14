@@ -26,11 +26,11 @@ const { works } = Astro.props;
             <h3 class="text-xl font-semibold font-montserrat">
               {work.role} @ {work.name}
             </h3>
-            <p class="text-sm dark:text-gray-100">
+            <p class="text-sm text-slate-600 dark:text-slate-100">
               {work.startDate} - {work.endDate}
             </p>
           </div>
-          <p class="text-sm mt-1 text-slate-500 dark:text-slate-400">
+          <p class="text-sm mt-1 text-slate-600 dark:text-slate-400">
             {work.location}
           </p>
           <p
@@ -39,7 +39,7 @@ const { works } = Astro.props;
           />
           <ul class="list-disc mt-4 list-inside">
             {work.description.map((item) => (
-              <li class="text-slate-500 dark:text-slate-400" set:html={item} />
+              <li class="text-slate-600 dark:text-slate-400" set:html={item} />
             ))}
           </ul>
           <div class="flex flex-row gap-2 flex-wrap mt-4">

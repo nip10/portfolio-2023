@@ -10,7 +10,7 @@ const { name, email } = Astro.props;
 ---
 
 <section class="mt-8 md:mt-16 mb-16 md:mb-32">
-  <p class="text-gray-800 dark:text-gray-100">Hey 👋, I'm</p>
+  <p class="text-lg text-gray-800 dark:text-gray-100">Hey 👋, I'm</p>
   <div
     aria-hidden="true"
     class="circle-radial-gradient w-[200px] h-[200px] md:w-[350px] md:h-[350px] absolute top-[150px] md:top-[100px] left-[50px] lg:left-[calc(calc(100vw-1112px)/2)] scale-150 dark:opacity-[.12] opacity-20 -z-10 overflow-hidden mix-blend-normal transition-opacity"
@@ -34,12 +34,12 @@ const { name, email } = Astro.props;
   <br />
   <p class="text-gray-800 dark:text-gray-100 text-lg">
     Tennis. Padel. Soccer (go FCPorto!). Travel. Food. <a
-      class="text-indigo-300 text-lg"
+      class="text-indigo-600 dark:text-indigo-300 text-lg"
       href="https://trakt.tv/users/nip10"
       target="_blank"
       rel="noopener">Movies. Tv shows.</a
     > Music. <a
-      class="text-indigo-300 text-lg"
+      class="text-indigo-600 dark:text-indigo-300 text-lg"
       href="https://www.goodreads.com/user/show/146957216-diogo-cardoso"
       target="_blank"
       rel="noopener">Books.</a
@@ -49,8 +49,9 @@ const { name, email } = Astro.props;
   <p class="text-gray-800 dark:text-gray-100 text-lg">
     Available for freelance work. If you have a project that you want to get
     started, think you need my help with something or just fancy saying hey,
-    then <a class="text-indigo-300 text-lg" href={`mailto:${email}`}
-      >get in touch.</a
+    then <a
+      class="text-indigo-600 dark:text-indigo-300 text-lg"
+      href={`mailto:${email}`}>get in touch.</a
     >.
   </p>
 </section>

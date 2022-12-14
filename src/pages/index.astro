@@ -18,6 +18,7 @@ import Education from "@components/sections/Education.astro";
 import Certification from "@components/sections/Certification.astro";
 import Skills from "@components/sections/Skills.astro";
 import Projects from "@components/sections/Projects.astro";
+import Contact from "@components/sections/Contact.astro";
 
 const githubUrl = socialMediaProfiles.find(
   (profile) => profile.name === "GitHub"
@@ -34,4 +35,5 @@ const email = socialMediaProfiles.find(
   <Certification certifications={certification} />
   <Projects projects={projects} githubUrl={githubUrl} />
   <Skills data={skills} />
+  <Contact email={email} />
 </Layout>

@@ -138,7 +138,7 @@ export const work: Work[] = [
       "All-rounder in a pre-seed startup, from developing the product to managing the team.",
     description: [
       "Built intuitive and user-friendly screens and components for the web application, improving user engagement and satisfaction",
-      "Developed and maintained robust and reliable back-end services, ensuring smooth and reliable performance for users",
+      "Developed and maintained back-end services, ensuring smooth and reliable performance for users",
       "Created engaging and functional screens and components for the mobile application, improving usability and accessibility on mobile devices",
       "Developed desktop application for hardware configuration",
       "Led and managed a team of 3 developers and 1 designer, ensuring alignment with the product roadmap and user needs",
@@ -180,7 +180,7 @@ export const work: Work[] = [
       "Full-stack role with emphasis on front-end. My first experience in a startup (seed) environment.",
     description: [
       "Created intuitive and user-friendly screens for the web application, improving user engagement and satisfaction",
-      "Developed and maintained back-end services, ensuring smooth and reliableperformance for users",
+      "Developed and maintained back-end services, ensuring smooth and reliable performance for users",
       "Built engaging and functional screens and components for the mobile application, improving usability and accessibility on mobile devices",
       "Developed a progressive web application that is optimized for offline use",
       "Implemented a comprehensive payment and billing system, subscription flow, and user management, streamlining these processes and improving the overall user experience",

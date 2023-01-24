@@ -113,7 +113,7 @@ export const work: Work[] = [
     summary:
       'Worked on the <a class="dark:text-indigo-300" href="https://design.hostelworld.com/6d86fdcac/p/688c6f-wanderlust-design-system" target="_blank" rel="noopener">Wanderlust Design System</a>, a design system built with web-components (Stencil) used by multiple Hostelworld applications.',
     description: [
-      "Built and maintained reusable components for the design system using StencilJS and SASS, improving consistency and efficiency",
+      "Built reusable components for the design system using StencilJS and SASS, improving consistency and efficiency across teams and applications",
       "Created intuitive and user-friendly screens and user interface components for the core web application",
       "Improved the overall look and feel of the application through the use of modern design techniques and tools",
     ],
@@ -140,7 +140,7 @@ export const work: Work[] = [
       "Built intuitive and user-friendly screens and components for the web application, improving user engagement and satisfaction",
       "Developed and maintained back-end services, ensuring smooth and reliable performance for users",
       "Created engaging and functional screens and components for the mobile application, improving usability and accessibility on mobile devices",
-      "Developed desktop application for hardware configuration",
+      "Developed desktop application for hardware configuration, improving the process by 10x resulting in faster production",
       "Led and managed a team of 3 developers and 1 designer, ensuring alignment with the product roadmap and user needs",
       "Implemented a payment and billing system, subscription flow, and user management, streamlining these processes and improving the overall user experience",
       "Set up and maintained continuous integration and delivery pipelines using GitHub Actions and AWS, resulting in faster and more reliable updates and new features for users",
@@ -179,7 +179,7 @@ export const work: Work[] = [
     summary:
       "Full-stack role with emphasis on front-end. My first experience in a startup (seed) environment.",
     description: [
-      "Created intuitive and user-friendly screens for the web application, improving user engagement and satisfaction",
+      "Built intuitive and user-friendly screens for the web application, improving user engagement and satisfaction",
       "Developed and maintained back-end services, ensuring smooth and reliable performance for users",
       "Built engaging and functional screens and components for the mobile application, improving usability and accessibility on mobile devices",
       "Developed a progressive web application that is optimized for offline use",
@@ -411,6 +411,16 @@ export const projects: Project[] = [
       "Git",
     ],
     thumbnail: "/sh.webm",
+  },
+  {
+    name: "Exchange Rates ECB",
+    description: [
+      '<a href="https://badge.fury.io/js/exchange-rates-ecb"><img src="https://badge.fury.io/js/exchange-rates-ecb.svg" alt="npm version" height="18"></a>Retrieve Euro foreign exchange reference rates from the European Central Bank.',
+    ],
+    liveUrl: "https://www.npmjs.com/package/exchange-rates-ecb",
+    repoUrl: "https://github.com/nip10/exchange-rates-ecb",
+    techStackAndTools: ["Node.JS", "TypeScript", "Github Actions", "Git"],
+    thumbnail: "/exchange-rate-ecb.webp",
   },
 ];
 

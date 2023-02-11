@@ -361,7 +361,7 @@ export const projects: Project[] = [
       "Using the open banking standards PSD2, it also allows you to connect your bank account and automatically import your transactions.",
       "Supports the major brokers in Europe, allowing you to automatically import your financial assets portfolio.",
     ],
-    liveUrl: "https://app.wonder.money",
+    liveUrl: "https://wonder.money",
     repoUrl: false,
     techStackAndTools: [
       "NextJS",

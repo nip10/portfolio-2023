@@ -448,7 +448,7 @@ export const socialMediaProfiles: SocialProfile[] = [
   },
   {
     name: "Email",
-    url: "mailto:hi@diogocardoso.dev",
+    url: "hi@diogocardoso.dev",
     iconSvg: "instagramSvg",
   },
 ];

@@ -28,8 +28,8 @@ const { name, socialMediaProfiles } = Astro.props as {
         socialMediaProfiles.map((socialMediaProfile) => (
           <a
             aria-label="Social Media"
-            href={socialMediaProfile.url}
-            target="_blank"
+            href={socialMediaProfile.name.toLowerCase() === "email" ? `mailto:${socialMediaProfile.url}` : socialMediaProfile.url}
+            target={socialMediaProfile.name.toLowerCase() === "email" ? "_self" : "_blank"}
             class="text-slate-200 flex items-center p-4 rounded-lg justify-center hover:bg-slate-700 transition duration-150 ease-in-out"
           >
             <Icon name={socialMediaProfile.name.toLowerCase()} />

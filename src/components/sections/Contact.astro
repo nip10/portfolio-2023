@@ -23,7 +23,7 @@ const { email } = Astro.props;
     What's Next?
   </h2>
   <a
-    href={email}
+    href=`mailto:${email}`
     class="bg-transparent hover:bg-purple-400 hover:bg-opacity-10 dark:text-purple-400 font-semibold hover:scale-105 py-4 px-8 border border-purple-400 rounded transition-all duration-150 ease-in tracking-wide text-xl shadow-md"
     >Say Hello</a
   >

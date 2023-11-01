@@ -68,10 +68,41 @@ export interface Work {
 
 export const work: Work[] = [
   {
+    name: "Sword Health",
+    location: "Portugal",
+    startDate: "Apr 2023",
+    endDate: "Present",
+    role: "Senior Frontend Engineer",
+    about:
+      "Sword Health is a digital platform that pairs individuals with human and digital therapists for personalized physical therapy, aiming to alleviate pain and prevent injuries.",
+    summary:
+      "Engaged in a front-end role with a focus on Research & Development, working on Design Systems, UI components, and the introduction of new features. Enhancing Developer Experience (DX) across teams",
+    description: [
+      "Developed intuitive web application interfaces and screens, enhancing user engagement and satisfaction",
+      "Partnered with the design team to establish a unified design system and component library, enhancing usability and application consistency",
+      "Collaborated with various teams to enhance the developer experience across different projects and applications",
+      "Established coding standards and best practices, enhancing code quality and consistency across teams",
+      "Transitioned multiple projects from Vue 2 to Vue 3, improving performance and Developer Experience (DX)",
+    ],
+    techStackAndTools: [
+      "Vue",
+      "TypeScript",
+      "Pinia",
+      "Figma",
+      "Storybook",
+      "Vitest",
+      "Vue testing utils",
+      "Git",
+      "Github Actions",
+      "Jira",
+      "Kanban",
+    ],
+  },
+  {
     name: "Replai",
     location: "Portugal/US",
     startDate: "Jan 2022",
-    endDate: "Present",
+    endDate: "Mar 2023",
     role: "Software Engineer",
     about:
       "The creative intelligence platform fuelling marketing performance - Replai helps mobile companies build successful creative strategies with computer vision AI",
@@ -270,6 +301,7 @@ export const skills: SkillGroup[] = [
       { name: "Styled Components" },
       { name: "SASS" },
       { name: "Angular" },
+      { name: "Vue" },
       { name: "Ionic" },
       { name: "Electron" },
     ],
@@ -293,6 +325,7 @@ export const skills: SkillGroup[] = [
       { name: "Jest" },
       { name: "React Testing Library" },
       { name: "Cypress" },
+      { name: "Vitest" },
     ],
   },
   {
@@ -321,6 +354,45 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  {
+    name: "ChatPDF",
+    description: [
+      "A web application that allows you to chat with your documents.",
+      "Uses embeddings and semantic search to find the most relevant documents for your query.",
+    ],
+    liveUrl: "https://chatpdf.pt/",
+    repoUrl: false,
+    techStackAndTools: [
+      "TypeScript",
+      "NextJS",
+      "Tailwind",
+      "Langchain",
+      "Pinecone",
+      "Kinde",
+      "Vercel",
+    ],
+    thumbnail: "/chatpdf.webp",
+  },
+  {
+    name: "Itineraris",
+    description: [
+      "A web application that allows you to plan your trips and share them with your friends.",
+      "Supported by IRIS and TUI",
+      "In development...",
+    ],
+    liveUrl: "https://itineraris.com/",
+    repoUrl: false,
+    techStackAndTools: [
+      "TypeScript",
+      "NextJS",
+      "ChakraUI",
+      "LLM",
+      "Redis",
+      "Clerk",
+      "Vercel",
+    ],
+    thumbnail: "/itineraris.webp",
+  },
   {
     name: "Portfolio",
     description: ["This portfolio website. Built using Astro and Tailwind."],

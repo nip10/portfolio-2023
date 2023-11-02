@@ -365,6 +365,7 @@ export const projects: Project[] = [
     techStackAndTools: [
       "TypeScript",
       "NextJS",
+      'TRPC',
       "Tailwind",
       "Langchain",
       "Pinecone",

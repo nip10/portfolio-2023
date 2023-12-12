@@ -377,11 +377,10 @@ export const projects: Project[] = [
   {
     name: "Itineraris",
     description: [
-      "A web application that allows you to plan your trips and share them with your friends.",
-      "Supported by IRIS and TUI",
-      "In development...",
+      "A web application that allows you to plan your trips with ease.",
+      "Participated in TUI Future Shapers 2023 by TUI/IRIS, and Beta Start 2023 by Beta-I.",
     ],
-    liveUrl: "https://itineraris.com/",
+    liveUrl: "https://itineraris.pt/",
     repoUrl: false,
     techStackAndTools: [
       "TypeScript",

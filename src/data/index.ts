@@ -359,6 +359,7 @@ export const projects: Project[] = [
     description: [
       "A web application that allows you to chat with your documents.",
       "Uses embeddings and semantic search to find the most relevant documents for your query.",
+      "Use code DCDEV to get 25% off on the first month."
     ],
     liveUrl: "https://chatpdf.pt/",
     repoUrl: false,

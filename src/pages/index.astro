@@ -4,6 +4,7 @@ import {
   education,
   projects,
   work,
+  otherWork,
   skills,
   certification,
   socialMediaProfiles,
@@ -30,7 +31,8 @@ const email = socialMediaProfiles.find(
 
 <Layout title={personalInfo.name} headMeta={headMeta}>
   <Hero name={personalInfo.name} email={email} />
-  <Work works={work} />
+  <Work work={work} />
+  <Work title="Other work" work={otherWork} />
   <Education educations={education} />
   <Certification certifications={certification} />
   <Projects projects={projects} githubUrl={githubUrl} />

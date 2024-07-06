@@ -72,17 +72,19 @@ export const work: Work[] = [
     location: "Portugal",
     startDate: "Apr 2023",
     endDate: "Present",
-    role: "Senior Frontend Engineer",
+    role: "Senior Frontend Engineer / Tech Lead FE",
     about:
       "Sword Health is a digital platform that pairs individuals with human and digital therapists for personalized physical therapy, aiming to alleviate pain and prevent injuries.",
     summary:
       "Engaged in a front-end role with a focus on Research & Development, working on Design Systems, UI components, and the introduction of new features. Enhancing Developer Experience (DX) across teams",
     description: [
-      "Developed intuitive web application interfaces and screens, enhancing user engagement and satisfaction",
-      "Partnered with the design team to establish a unified design system and component library, enhancing usability and application consistency",
-      "Collaborated with various teams to enhance the developer experience across different projects and applications",
-      "Established coding standards and best practices, enhancing code quality and consistency across teams",
-      "Transitioned multiple projects from Vue 2 to Vue 3, improving performance and Developer Experience (DX)",
+      "Led a team of front-end engineers to build and maintain multiple web applications, ensuring they were delivered on time and performed well.",
+      "Spearheaded the creation of Sword's design system, a comprehensive component library utilized across various projects. Oversaw the entire process from planning to development, ensuring seamless communication with the design team to establish a unified design system, enhancing usability and consistency.",
+      "Built user-friendly web application interfaces that improved user engagement and satisfaction.",
+      "Worked with various teams to improve the developer experience and promote teamwork across projects.",
+      "Set and enforced coding standards and best practices to improve code quality and consistency.",
+      "Implemented unit and end-to-end (e2e) tests to ensure the code was reliable and the applications were stable.",
+      "Successfully upgraded multiple projects from Vue 2 to Vue 3, enhancing performance, maintainability, and user experience.",
     ],
     techStackAndTools: [
       "Vue",
@@ -234,6 +236,25 @@ export const work: Work[] = [
   },
 ];
 
+export const otherWork: Work[] = [
+  {
+    name: "Code for All_ & Augusta Labs",
+    location: "Portugal",
+    startDate: "Mar 2024",
+    endDate: "Apr 2024",
+    role: "Teacher Assistant",
+    about:
+      "Code for All_ provides programming related courses and bootcamps. Augusta Labs is a company focused on helping companies adopt AI solutions.",
+    summary: "TA for the course 'AI for Developers'",
+    description: [
+      "Played a key role in planning and developing course content, including the creation of workshop exercises and syllabus reviews",
+      "Designed and implemented practical exercises to reinforce course material.",
+      "Provided weekly support to students through Q&A sessions and project reviews, assisting approximately 15 students.",
+      "Conducted engaging and informative workshops to enhance students' understanding of AI and LLMs.",
+    ],
+    techStackAndTools: ["Python", "Langchain", "Google Colab", "LLM"],
+  },
+];
 export interface Education {
   name: string;
   location: string;
@@ -247,7 +268,7 @@ export const education: Education[] = [
     name: "Integrated Master's Degree in Electrical and Computer Engineering",
     location: "FEUP, Porto, Portugal",
     startDate: "2014",
-    endDate: "2023 est.",
+    endDate: "2024 est.",
     description: [
       'Master thesis: "Framework for collecting and processing georeferencing data"',
     ],
@@ -359,14 +380,14 @@ export const projects: Project[] = [
     description: [
       "A web application that allows you to chat with your documents.",
       "Uses embeddings and semantic search to find the most relevant documents for your query.",
-      "Use code DCDEV to get 25% off on the first month."
+      "Use code DCDEV to get 25% off on the first month.",
     ],
     liveUrl: "https://chatpdf.pt/",
     repoUrl: false,
     techStackAndTools: [
       "TypeScript",
       "NextJS",
-      'TRPC',
+      "TRPC",
       "Tailwind",
       "Langchain",
       "Pinecone",

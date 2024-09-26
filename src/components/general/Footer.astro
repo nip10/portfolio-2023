@@ -1,5 +1,5 @@
 ---
-import { Icon } from "astro-icon";
+import { Icon } from 'astro-icon/components'
 import type { PersonalInfo, SocialProfile } from "@data";
 
 const { name, socialMediaProfiles } = Astro.props as {
@@ -21,7 +21,7 @@ const { name, socialMediaProfiles } = Astro.props as {
     <p
       class="text-slate-200 text-right my-6 md:my-8 font-montserrat inline-flex items-center order-last md:order-first"
     >
-      Made with <Icon name="love" /> by &nbsp;<strong>{name}</strong>
+      Made with &nbsp;<Icon name="love" />&nbsp; by &nbsp;<strong>{name}</strong>
     </p>
     <div class="grid grid-cols-4 gap-4">
       {

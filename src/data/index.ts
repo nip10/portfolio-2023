@@ -1,3 +1,5 @@
+import type { TwitterCardType } from "astro-seo";
+
 export interface HeadMeta {
   gaId: string;
   description: string;
@@ -17,7 +19,7 @@ export interface HeadMeta {
   twitter: {
     creator: string;
     site: string;
-    card: string;
+    card: TwitterCardType;
   };
 }
 
@@ -42,7 +44,7 @@ export const headMeta: HeadMeta = {
   twitter: {
     creator: "@imnip10",
     site: "https://diogocardoso.dev",
-    card: "summary_large_image",
+    card: "summary_large_image" as TwitterCardType,
   },
 };
 

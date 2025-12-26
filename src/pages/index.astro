@@ -7,6 +7,7 @@ import {
   otherWork,
   skills,
   certification,
+  techTalks,
   socialMediaProfiles,
   headMeta,
 } from "@data";
@@ -15,6 +16,7 @@ import Layout from "../layouts/Layout.astro";
 
 import Hero from "@components/sections/Hero.astro";
 import Work from "@components/sections/Work.astro";
+import TechTalks from "@components/sections/TechTalks.astro";
 import Education from "@components/sections/Education.astro";
 import Certification from "@components/sections/Certification.astro";
 import Skills from "@components/sections/Skills.astro";
@@ -33,6 +35,7 @@ const email = socialMediaProfiles.find(
   <Hero name={personalInfo.name} email={email} />
   <Work work={work} />
   <Work title="Other work" work={otherWork} />
+  <TechTalks talks={techTalks} />
   <Education educations={education} />
   <Certification certifications={certification} />
   <Projects projects={projects} githubUrl={githubUrl} />

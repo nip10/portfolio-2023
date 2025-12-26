@@ -74,7 +74,7 @@ export const work: Work[] = [
     location: "Portugal",
     startDate: "Apr 2023",
     endDate: "Present",
-    role: "Senior Frontend Engineer / Tech Lead FE",
+    role: "Tech Lead",
     about:
       "Sword Health is a digital platform that pairs individuals with human and digital therapists for personalized physical therapy, aiming to alleviate pain and prevent injuries.",
     summary:
@@ -85,6 +85,7 @@ export const work: Work[] = [
       "Established frontend best practices and a shared component library, reducing code duplication and accelerating development",
       "Scaled the team through technical interviews and hiring while maintaining strong team culture",
       "Managed cross-functional relationships with Product, Design, and Engineering to align technical implementation with business objectives",
+      "Driving AI adoption across the team by introducing AI-assisted development tools, automated code reviews, and AGENTS.md documentation standards, while training developers on effective AI workflows",
     ],
     techStackAndTools: [
       "Vue",
@@ -554,6 +555,44 @@ export const projects: Project[] = [
     repoUrl: "https://github.com/nip10/fmp-node-sdk",
     techStackAndTools: ["TypeScript", "Node.JS", "Git"],
     thumbnail: "https://opengraph.githubassets.com/v2025/nip10/fmp-node-sdk",
+  },
+];
+
+export interface TechTalk {
+  title: string;
+  event: string;
+  date: string;
+  description: string;
+  slidesUrl?: string;
+  repoUrls?: string[];
+  linkedInUrl?: string;
+}
+
+export const techTalks: TechTalk[] = [
+  {
+    title: "State Machines in Frontend",
+    event: "Tech Talk",
+    date: "2024",
+    description:
+      "Presented on using finite state machines to manage complex UI state in Vue applications",
+    slidesUrl: "https://web-finite-state-machine.vercel.app",
+    repoUrls: [
+      "https://github.com/nip10/vue-state-machine-slides",
+      "https://github.com/nip10/vue-state-machine-demo",
+    ],
+  },
+  {
+    title: "AI SDK & Varyant",
+    event: "Sword Health x Supabase Meetup",
+    date: "2025",
+    description:
+      "Organized and hosted a developer meetup in partnership with Supabase, and presented on AI SDK integration patterns",
+    repoUrls: [
+      "https://github.com/nip10/ai-sdk-talk",
+      "https://github.com/nip10/varyant",
+    ],
+    linkedInUrl:
+      "https://www.linkedin.com/feed/update/urn:li:activity:7408140423858114560/",
   },
 ];
 

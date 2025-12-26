@@ -520,7 +520,7 @@ export const projects: Project[] = [
     liveUrl: "https://www.npmjs.com/package/exchange-rates-ecb",
     repoUrl: "https://github.com/nip10/exchange-rates-ecb",
     techStackAndTools: ["Node.JS", "TypeScript", "Github Actions", "Git"],
-    thumbnail: "/exchange-rate-ecb.webp",
+    thumbnail: "https://opengraph.githubassets.com/v2025/nip10/exchange-rates-ecb",
   },
   {
     name: "Validate PT ID",
@@ -531,6 +531,7 @@ export const projects: Project[] = [
     liveUrl: "https://www.npmjs.com/package/validate-pt-id",
     repoUrl: "https://github.com/nip10/validate-pt-id",
     techStackAndTools: ["TypeScript", "Node.JS", "Vitest", "Git"],
+    thumbnail: "https://opengraph.githubassets.com/v2025/nip10/validate-pt-id",
   },
   {
     name: "GoCardless Open Banking SDK",
@@ -541,6 +542,7 @@ export const projects: Project[] = [
     liveUrl: "https://www.npmjs.com/package/gocardless-open-banking",
     repoUrl: "https://github.com/nip10/gocardless-open-banking",
     techStackAndTools: ["TypeScript", "Node.JS", "OpenAPI", "Vitest", "Git"],
+    thumbnail: "https://opengraph.githubassets.com/v2025/nip10/gocardless-open-banking",
   },
   {
     name: "FMP Node SDK",
@@ -551,6 +553,7 @@ export const projects: Project[] = [
     liveUrl: "https://www.npmjs.com/package/fmp-node-sdk",
     repoUrl: "https://github.com/nip10/fmp-node-sdk",
     techStackAndTools: ["TypeScript", "Node.JS", "Git"],
+    thumbnail: "https://opengraph.githubassets.com/v2025/nip10/fmp-node-sdk",
   },
 ];
 

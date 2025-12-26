@@ -1,55 +1,69 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@theme {
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-lora: "Lora", sans-serif;
+  --font-display: "Montserrat", sans-serif;
+  --font-body: "Lora", sans-serif;
+}
 
 html {
   scroll-behavior: smooth;
 }
 
-@layer components {
-  body {
-    @apply bg-gray-100 dark:bg-gray-900;
+body {
+  @apply bg-gray-100 dark:bg-gray-900;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-montserrat;
+}
+
+h1 {
+  @apply text-6xl sm:text-8xl leading-5;
+}
+
+h2 {
+  @apply text-xl font-semibold;
+}
+
+p,
+li,
+a {
+  @apply font-lora;
+}
+
+section {
+  @apply scroll-mt-[1rem] md:scroll-mt-[2rem];
+}
+
+[astro-icon] {
+  height: auto;
+}
+
+@utility container {
+  @apply max-w-[1112px] mx-auto px-4 sm:px-8 lg:px-12;
+}
+
+@utility fadeInBottom {
+  animation-name: fadeInBottom;
+  animation-duration: 500ms;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(60%);
   }
-  .container {
-    @apply max-w-[1112px] mx-auto px-4 sm:px-8 lg:px-12;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply font-montserrat;
-  }
-  h1 {
-    @apply text-6xl sm:text-8xl leading-5;
-  }
-  h2 {
-    @apply text-xl font-semibold;
-  }
-  p,
-  li,
-  a {
-    @apply font-lora text-gray-800;
-  }
-  section {
-    @apply scroll-mt-[1rem] md:scroll-mt-[2rem];
-  }
-  [astro-icon] {
-    height: auto;
-  }
-  @keyframes fadeInBottom {
-    from {
-      opacity: 0;
-      transform: translateY(60%);
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  .fadeInBottom {
-    animation-name: fadeInBottom;
-    animation-duration: 500ms;
-    animation-fill-mode: both;
+  to {
+    opacity: 1;
   }
 }

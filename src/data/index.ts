@@ -26,7 +26,7 @@ export interface HeadMeta {
 export const headMeta: HeadMeta = {
   gaId: "G-QTHTJJDQFP",
   description:
-    "Software engineer who specializes in building things for the web",
+    "Product minded Software engineer who specializes in building things for the web",
   openGraph: {
     basic: {
       title:
@@ -80,13 +80,11 @@ export const work: Work[] = [
     summary:
       "Engaged in a front-end role with a focus on Research & Development, working on Design Systems, UI components, and the introduction of new features. Enhancing Developer Experience (DX) across teams",
     description: [
-      "Led a team of front-end engineers to build and maintain multiple web applications, ensuring they were delivered on time and performed well.",
-      "Spearheaded the creation of Sword's design system, a comprehensive component library utilized across various projects. Oversaw the entire process from planning to development, ensuring seamless communication with the design team to establish a unified design system, enhancing usability and consistency.",
-      "Built user-friendly web application interfaces that improved user engagement and satisfaction.",
-      "Worked with various teams to improve the developer experience and promote teamwork across projects.",
-      "Set and enforced coding standards and best practices to improve code quality and consistency.",
-      "Implemented unit and end-to-end (e2e) tests to ensure the code was reliable and the applications were stable.",
-      "Successfully upgraded multiple projects from Vue 2 to Vue 3, enhancing performance, maintainability, and user experience.",
+      "Led and mentored a team of 7 frontend engineers, implementing Agile methodologies for consistent delivery",
+      "Architected UX improvements to the core intake application, increasing conversion rates and reducing abandonment",
+      "Established frontend best practices and a shared component library, reducing code duplication and accelerating development",
+      "Scaled the team through technical interviews and hiring while maintaining strong team culture",
+      "Managed cross-functional relationships with Product, Design, and Engineering to align technical implementation with business objectives",
     ],
     techStackAndTools: [
       "Vue",
@@ -113,11 +111,11 @@ export const work: Work[] = [
     summary:
       "Full-stack role with emphasis on front-end. Focus on delivering new features and improving the product.",
     description: [
-      "Built intuitive user interfaces and screens for the web application, improving user engagement and satisfaction",
-      "Developed and maintained back-end services, ensuring smooth and reliable performance for users",
-      "Collaborated with the design team to create a cohesive design system and components library, improving usability and consistency across the application",
-      "Worked closely with the product team to define and prioritize product roadmap and features",
-      "Ensured the quality and functionality of the application through the implementation of unit and end-to-end tests",
+      "Built intuitive user interfaces for a data-intensive web application, with a focus on performance optimization",
+      "Developed and maintained back-end services, ensuring smooth and reliable performance",
+      "Collaborated with the design team to create a cohesive design system and component library, improving usability and consistency",
+      "Worked closely with the product team to define and prioritize the roadmap and features",
+      "Ensured quality through unit and end-to-end testing",
     ],
     techStackAndTools: [
       "React",

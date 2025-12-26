@@ -361,6 +361,15 @@ export const skills: SkillGroup[] = [
     skills: [{ name: "CI/CD" }, { name: "AWS" }, { name: "Azure" }],
   },
   {
+    category: "AI",
+    skills: [
+      { name: "AI SDK" },
+      { name: "Langchain" },
+      { name: "RAG" },
+      { name: "Claude Code" },
+    ],
+  },
+  {
     category: "Tools",
     skills: [
       { name: "Git" },

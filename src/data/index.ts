@@ -405,8 +405,8 @@ export const projects: Project[] = [
   {
     name: "Itineraris",
     description: [
-      "A web application that allows you to plan your trips with ease.",
-      "Participated in TUI Future Shapers 2023 by TUI/IRIS, and Beta Start 2023 by Beta-I.",
+      "Co-built a fully functional AI travel assistant with a focus on Itinerary Planning, Budgeting and Social features.",
+      "Participated (& won) in TUI Future Shapers 2023 by TUI/IRIS, and Beta Start 2023 by Beta-I.",
     ],
     liveUrl: "https://itineraris.pt/",
     repoUrl: false,
@@ -521,6 +521,36 @@ export const projects: Project[] = [
     repoUrl: "https://github.com/nip10/exchange-rates-ecb",
     techStackAndTools: ["Node.JS", "TypeScript", "Github Actions", "Git"],
     thumbnail: "/exchange-rate-ecb.webp",
+  },
+  {
+    name: "Validate PT ID",
+    description: [
+      "A TypeScript library to validate and generate Portuguese CC (Citizen Identity Card) and NIF (Personal Tax Number) numbers.",
+      "Supports both ESM and CommonJS module formats.",
+    ],
+    liveUrl: "https://www.npmjs.com/package/validate-pt-id",
+    repoUrl: "https://github.com/nip10/validate-pt-id",
+    techStackAndTools: ["TypeScript", "Node.JS", "Vitest", "Git"],
+  },
+  {
+    name: "GoCardless Open Banking SDK",
+    description: [
+      "A modern, type-safe TypeScript SDK for the GoCardless Bank Account Data API v2.",
+      "Features automatic token management, smart retry logic, and a clean Promise-based interface.",
+    ],
+    liveUrl: "https://www.npmjs.com/package/gocardless-open-banking",
+    repoUrl: "https://github.com/nip10/gocardless-open-banking",
+    techStackAndTools: ["TypeScript", "Node.JS", "OpenAPI", "Vitest", "Git"],
+  },
+  {
+    name: "FMP Node SDK",
+    description: [
+      "A TypeScript SDK for the Financial Modeling Prep API.",
+      "Provides access to financial data including stock prices, company financials, and market data.",
+    ],
+    liveUrl: "https://www.npmjs.com/package/fmp-node-sdk",
+    repoUrl: "https://github.com/nip10/fmp-node-sdk",
+    techStackAndTools: ["TypeScript", "Node.JS", "Git"],
   },
 ];
 

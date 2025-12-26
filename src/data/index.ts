@@ -289,6 +289,11 @@ export const certification: Certification[] = [
     url: "https://apgei.pt/events/essential-project-management-3a-edicao/",
   },
   {
+    name: "Product MBA",
+    provider: "Builders Camp",
+    url: "https://www.builderscamp.com/",
+  },
+  {
     name: "First Certificate in English (FCE)",
     provider: "Cambridge University Press & Assessment",
   },
@@ -318,6 +323,7 @@ export const skills: SkillGroup[] = [
     skills: [
       { name: "React" },
       { name: "NextJS" },
+      { name: "Tailwind" },
       { name: "Redux" },
       { name: "Styled Components" },
       { name: "SASS" },

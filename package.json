@@ -9,7 +9,7 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "lint": "eslint src --ext .js,.jsx,.ts,.tsx,.astro",
+    "lint": "eslint src",
     "pretty": "prettier --write ."
   },
   "dependencies": {
